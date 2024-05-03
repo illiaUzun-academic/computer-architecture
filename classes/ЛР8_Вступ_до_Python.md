@@ -41,13 +41,13 @@
 
 ### Додаткові задачі:
 
-[Python Basic Exercise for Beginners]() (PyNative)
+[Python Basic Exercise for Beginners with Solutions](https://pynative.com/python-basic-exercise-for-beginners/) (PyNative)
 
-[Python Input and Output Exercise ]()(PyNative)
+[Python Input and Output Exercise]([Python for loop and if else Exercises [10 Exercise Programs\] (pynative.com)](https://pynative.com/python-input-and-output-exercise/)) (PyNative)
 
-[Python if else, for loop, and range() Exercises with Solutions ]()(PyNative)
+[Python if else, for loop, and range() Exercises with Solutions]([Python for loop and if else Exercises [10 Exercise Programs\] (pynative.com)](https://pynative.com/python-if-else-and-for-loop-exercise-with-solutions/)) (PyNative)
 
-[Python String Exercise with Solutions]() (PyNative)
+[Python String Exercise with Solutions]([Python String Exercise with Solutions – String Programs for Practice (pynative.com)](https://pynative.com/python-string-exercise/)) (PyNative)
 
 [CodingBat Python Warmup-1](https://codingbat.com/python/Warmup-1) (CodingBat)
 
