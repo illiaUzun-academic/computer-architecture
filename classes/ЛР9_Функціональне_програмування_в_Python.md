@@ -41,3 +41,13 @@
 - Правильність та ефективність коду.
 - Розуміння принципів функціонального програмування.
 - Якість звіту та відповідей на питання.
+
+
+
+### Додаткові задачі:
+
+[Python Functions Exercise with Solution 10 Programs](https://pynative.com/python-functions-exercise-with-solutions/)
+
+[CodingBat Python String-1](https://codingbat.com/python/String-1)
+
+[CodingBat Python Logic-1](https://codingbat.com/python/Logic-1)
