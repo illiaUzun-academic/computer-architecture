@@ -1,0 +1,61 @@
+class Lexer:
+    def __init__(self, source_code):
+        """
+        Ініціалізує лексер з вихідним кодом.
+
+        :param source_code: Вихідний код програми як рядок.
+        """
+        self.source_code = source_code
+        self.tokens = []
+        self.current_char = None
+        self.current_pos = -1
+        self.advance()
+
+    def advance(self):
+        """
+        Переміщається до наступного символу у вихідному коді.
+        """
+        self.current_pos += 1
+        self.current_char = self.source_code[self.current_pos] if self.current_pos < len(self.source_code) else None
+
+    def tokenize(self):
+        """
+        Розбиває вихідний код на токени.
+
+        :return: Список токенів.
+        """
+        while self.current_char is not None:
+            if self.current_char.isspace():
+                self.advance()
+            elif self.current_char.isdigit():
+                self.tokens.append(self.create_number())
+            elif self.current_char.isalpha():
+                self.tokens.append(self.create_identifier())
+            else:
+                self.tokens.append(('UNKNOWN', self.current_char))
+                self.advance()
+        return self.tokens
+
+    def create_number(self):
+        num_str = ''
+        while self.current_char is not None and self.current_char.isdigit():
+            num_str += self.current_char
+            self.advance()
+        return ('NUMBER', int(num_str))
+
+    def create_identifier(self):
+        id_str = ''
+        while self.current_char is not None and self.current_char.isalnum():
+            id_str += self.current_char
+            self.advance()
+        keywords = {
+            'додати': 'PLUS',
+            'відняти': 'MINUS',
+            'помножити': 'MUL',
+            'поділити': 'DIV',
+            'залишок': 'MOD',
+            'негатив': 'NEG',
+            'квадрат': 'SQR',
+            'дорівнює': 'EQ'
+        }
+        return (keywords.get(id_str, 'IDENTIFIER'), id_str)

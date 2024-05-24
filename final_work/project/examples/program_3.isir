@@ -1,0 +1,8 @@
+m = 12
+n = 8
+o = m + n
+p = o - n
+q = p * m
+r = q % n
+s = ~r
+t = r ^ 2
