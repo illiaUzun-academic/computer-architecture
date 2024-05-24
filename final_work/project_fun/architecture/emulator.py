@@ -2,7 +2,6 @@
 
 from .cpu import CPU
 from .instruction_set import InstructionSet
-from .memory import Memory
 
 
 class Emulator:
@@ -11,7 +10,6 @@ class Emulator:
         Ініціалізує емулятор.
         """
         self.cpu = CPU()
-        self.memory = Memory()
         self.instruction_set = InstructionSet()
 
     def run(self, instructions):
