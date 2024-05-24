@@ -6,6 +6,7 @@ from .parser import Parser
 
 
 class Compiler:
+
     def __init__(self, source_code):
         """
         Ініціалізує компілятор з вихідним кодом.

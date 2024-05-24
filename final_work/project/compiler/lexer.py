@@ -1,6 +1,7 @@
 # compiler/lexer.py
 
 class Lexer:
+
     def __init__(self, source_code):
         """
         Ініціалізує лексер з вихідним кодом.
